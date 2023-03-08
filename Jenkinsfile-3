@@ -3,6 +3,7 @@ pipeline {
           dockerfile 
             {
               args '--mount type=bind,source=/Users/anindamukherjee/dev/docker-mat,target=/dump'
+               args 'aninda.hprof'
              }
          }
   stages {
