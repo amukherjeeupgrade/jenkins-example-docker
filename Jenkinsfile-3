@@ -1,5 +1,5 @@
 pipeline {
-  agent { dockerfile true --mount type=bind,source=/Users/anindamukherjee/dev/docker-mat,target=/dump}
+  agent { dockerfile true args '--mount type=bind,source=/Users/anindamukherjee/dev/docker-mat,target=/dump'}
   stages {
     stage('Test') {
       steps {
