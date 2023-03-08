@@ -9,5 +9,6 @@ ENV JAVA_OPTS="-Xmx1024m"
 VOLUME ["/dump"]
 
 ADD parse-dump.sh /opt
+RUN chmod +x /opt/parse-dump.sh
 # CMD ["/opt/mat/MemoryAnalyzer"]
 ENTRYPOINT ["/opt/parse-dump.sh"]
