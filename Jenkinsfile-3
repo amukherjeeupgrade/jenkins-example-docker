@@ -2,7 +2,7 @@ pipeline {
   agent { 
           dockerfile 
             {
-              args '--mount type=bind,source=/Users/anindamukherjee/dev/docker-mat,target=/dump', 'aninda.hprof'
+              args '--mount type=bind,source=/Users/anindamukherjee/dev/docker-mat,target=/dump aninda.hprof'
              }
          }
   stages {
