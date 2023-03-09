@@ -2,6 +2,7 @@
 
 heapdump_volume=/dump
 heapdump=${1}
+heapdump=aninda.hprof
 reports="org.eclipse.mat.api:suspects org.eclipse.mat.api:overview org.eclipse.mat.api:top_components"
 # https://wiki.eclipse.org/MemoryAnalyzer/FAQ
 
