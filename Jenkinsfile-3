@@ -4,7 +4,6 @@ pipeline {
             filename 'Dockerfile'
             additionalBuildArgs  '--build-arg version=1.0.2'
             args '--mount type=bind,source=/Users/anindamukherjee/dev/docker-mat,target=/dump'
-            args 'aninda.hprof'
             
         }
     }
@@ -12,7 +11,7 @@ pipeline {
     stage('Test') {
       steps {
         sh '''
-          /opt/parse-dump.sh
+          /opt/parse-dump.sh aninda.hprof
           git --version
           curl --version
         '''
