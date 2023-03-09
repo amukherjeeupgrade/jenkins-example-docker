@@ -10,11 +10,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''
-          cat /opt/parse-dump.sh aninda.hprof
-          git --version
-          curl --version
-        '''
+        sh 'cat /opt/parse-dump.sh aninda.hprof'
       }
     }
   }
