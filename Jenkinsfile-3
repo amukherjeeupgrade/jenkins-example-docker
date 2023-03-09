@@ -3,7 +3,7 @@ pipeline {
       {
             filename 'Dockerfile'
             additionalBuildArgs  '--build-arg version=1.0.2'
-            args '--mount type=bind,source=/Users/anindamukherjee/dev/docker-mat,target=/dump'
+            args '--mount type=bind,source=/Users/anindamukherjee/dev/docker-mat,target=/dump aninda.hprof'
         }
     }
   stages {
