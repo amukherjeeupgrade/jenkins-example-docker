@@ -10,7 +10,8 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh './opt/parse-dump.sh'
+        //sh './opt/parse-dump.sh'
+        sh pwd
       }
     }
   }
