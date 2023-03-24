@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'cat /opt/parse-dump.sh'
+        sh './opt/parse-dump.sh'
       }
     }
   }
