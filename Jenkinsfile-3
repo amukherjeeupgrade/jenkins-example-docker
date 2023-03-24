@@ -12,6 +12,7 @@ pipeline {
       steps {
         //sh './opt/parse-dump.sh'
         sh 'ls -l'
+        sh 'pwd'
       }
     }
   }
